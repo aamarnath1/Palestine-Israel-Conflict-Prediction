@@ -1,0 +1,48 @@
+DSCI 478 Capstone Capstone Group Project in Data Science
+Final Project Preliminary Proposal
+
+Instructor: Emily J. King
+Due: March 20 at 3:00 p.m.
+
+Group members:
+Arya Amarnath
+
+Tentative project title:
+Forecasting Conflict : An ML Approach to analyzing the Israel-Palestine Conflict
+
+
+Data set(s) to be worked with:
+The ACLED and Uppsala data will be combined into one large dataset consisting of events of conflict occurring from 1989 - 2024. I believe that the data wrangling stage will be a majority of my time as there are a lot of features I need to deal with and ensure that the data overlap between 2021 and 2022 are actually accurate between both datasets. There are also columns which include a description of the event so I believe I will use sentiment analysis to categorize the events by who seemed to provoke or start the fight. 
+
+The twitter API data will also be ran through an NLP process and sentiment analysis to extract valuable information from the tweets. The aim of this is to get a current-day perspective as well as potentially gain insights into how people tend to see/view either side of the conflict. This will either be fed back into a separate time-series prediction model or potentially used to create an early-warning-system if tweets prove to be an accurate source of data. - this is a down the line feature if I get good results from the prediction model of just twitter data- 
+
+Actual datasets: 
+ACLED Conflict Events Data for both Israel and Palestine - Past 3 years (2021-2024)
+Uppsala Conflict Data Program (UCDP)- Israel-Palestine Conflict data from 1989-2022
+Twitter API - Access to 1500 tweets
+
+
+Proposed methods to be used:
+Essentially, I want to create a time-series model to predict conflict, which is explained using the ACLED Definitions of Political Violence and Protest, between Israel and Palestine using historical data collected by humanitarian organizations. I also want to utilize real time twitter data to attempt to create a similar time-series prediction model and potentially if the twitter data proves to be an accurate source, I want to try and make an early-warning system for when conflict may occur. 
+
+The workflow of this project consists of:
+
+1. Finalize Data Collection
+	Make sure that I'm satisfied with the datasets that I have. I am also waiting to hear back from the ACLED organization to see if I can gain access to data from prior than just 3 years ago which is my current cap from the website. 
+
+2. Data Cleaning and Wrangling + Processing
+	This will be a large chunk of time and will consist of combining 2 datasets, the ACLED and UCDP data, together into one large dataset which holds all forms of conflict across 1989-2024. This data is within a daily level of events of conflict, locations, casualties, event description and much more. 
+	The second part of this will be doing the same however for the Twitter data collected from the API. This part will consist of breaking down the text using some Transformers technique, BERT? so it is able to determine sentences and words next to each other instead of just word by word like tf-idf. More processing to enable the proper format for our next step
+
+3. Creating + Testing Model
+	This will be another complicated "chunk" but will consist of actually building up the predictive time-series model. Start by training several different types of models on the historical data, predict them and then analyze to compare model by model. Then move on optimizing the selected model using cross-validation techniques. 
+
+	The twitter data will go through a similar model creation stage however before this it will go through sentiment analysis so that the model can determine if the tweet was more Israel-leaning or Palestine-leaning. I'm not sure if this stage will be 100% useful at this moment and I may end up skipping / changing up this sentiment analysis part but I do believe that there is some form of valuable information that can be gained by sending the tweet through sentiment analysis. 
+
+4. Model Evaluation + Report + Presentation
+	This is essentially the finalizing steps of the project and will be near the very end. I expect this part to go smoothly granted I work enough on the prior 3 steps as those are the core / critical steps that are needed for this project to flow. 
+
+
+Why did you choose this project:
+I chose to work on analyzing the Israel-Palestine conflict because it is something that I have a lot of passion for and think that it is one of the worst tragedies to occur in this generation. As someone who has lived in the Middle East and first-hand have experienced the atrocities that Israel has committed against the Palestinian population of which some are my closest friends whose families have been held in occupation for the past 70 years. I believe that it is super important to spread awareness and call for a cease-fire in the West especially America to stop the genocide of families, children and innocent people. Without going too much into my personal beliefs, I believe that this an important project to showcase what the potential death-toll and future violence could lead to if a solution isn't made to this issue soon. I have experience with time-series data due to my Economics background and feel very confident working forecasting as I have done it several times before, just not within Python, so this will be a new challenge in that sense. My main idea for this project was to create an early-warning system for conflict by creating a pre-existing predictive model and then combining it with real-time twitter data however that seemed to pose too large of a challenge in terms of twitter data not being completely accurate. However if I am able to easily complete the predictive model, I will be focusing on trying to implement said early warning system which is essentially a step further past the predictive model I am currently trying to implement. 
+
