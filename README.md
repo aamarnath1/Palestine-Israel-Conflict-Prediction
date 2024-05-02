@@ -5,7 +5,9 @@ Date: May 2024
 
 Overview
 -------------------
+
 This repository contains all the necessary code and datasets for my senior capstone project, "Attempting Predictions in the Israel-Palestine Conflict: An ML and Econometric Approach." The goal of this project is to use machine learning and econometric approaches to predict conflict events, enhancing our understanding of the dynamics within the Israel-Palestine conflict through data-driven analysis. 
+
 -------------------
 
 
