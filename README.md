@@ -22,7 +22,7 @@ Test notebooks: Testing jupyter notebooks used during the process. Includes othe
 
 Research: Useful resources used during the project - ACLED Codebook, relevant academic journals
 
-Report: Includes my draft + final report 
+Report: Includes my draft, final report and slide deck
 
 -------------------
 
